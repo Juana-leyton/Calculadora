@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./cal.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!--<div id="mensaje">Hola esto es un Div</div>
+    <a onclick="cambiarMensaje('mensaje')">cambiar mensaje</a>
+
+    <div id="mensaje2">Hola este es el mensaje 2</div>
+    <a onclick="cambiarMensaje('mensaje2')">cambiar mensaje </a>-->
+
+    <!--<h1>Calculadora</h1>
+    <div class="cal">hola</div>
+
+    <div class="calculadora" style="width: 90%; flex-wrap:wrap;">
+        <input type="button" class="boton" value="1">
+        <input type="button" class="boton" value="2">
+        <input type="button" class="boton" value="3">
+        <input type="button" class="boton" value="+">
+        <input type="button" class="boton" value="4">
+        <input type="button" class="boton" value="5">
+        <input type="button" class="boton" value="6">
+        <input type="button" class="boton" value="-">
+        <input type="button" class="boton" value="7">
+        <input type="button" class="boton" value="8">
+        <input type="button" class="boton" value="9">
+        <input type="button" class="boton" value="*">
+        <input type="button" class="boton" value="Limpiar">
+        <input type="button" class="boton" value="0">
+        <input type="button" class="boton" value="=">
+        <input type="button" class="boton" value="/">
+    </div>-->
+
+    <div class="container">
+        <div class="calculator" class="column">
+            <h1 style="text-align: center;"> Calculadora </h1>
+            <div class="calculator-info">
+                <input type="text" id="data" disabled />
+            </div>
+            <div class="calculator-data row">
+                <div class="row" style=" width: 90%; flex-wrap: wrap;">
+                    <input type="button" class="btn-number" value="1" onclick="pintarNumero(this.value)">
+                    <input type="button" class="btn-number" value="2" onclick="pintarNumero(this.value)">
+                    <input type="button" class="btn-number" value="3" onclick="pintarNumero(this.value)">
+                    <input type="button" class="btn-number" value="4" onclick="pintarNumero(this.value)">
+                    <input type="button" class="btn-number" value="5" onclick="pintarNumero(this.value)">
+                    <input type="button" class="btn-number" value="6" onclick="pintarNumero(this.value)">
+                    <input type="button" class="btn-number" value="7" onclick="pintarNumero(this.value)">
+                    <input type="button" class="btn-number" value="8" onclick="pintarNumero(this.value)">
+                    <input type="button" class="btn-number" value="9" onclick="pintarNumero(this.value)"> 
+                    <input type="button" class="btn-number" value="Limpiar" onclick="limpiarDato()">
+                    <input type="button" class="btn-number" value="0" onclick="pintarNumero(this.value)">
+                    <input type="button" class="btn-number" value="=" onclick="mostrarResultado()">
+                </div>
+                <div class="column" style="width: 10%; text-align: center; ">
+                    <input type="button" class="btn-operator" value="+" onclick="pintarOperador(this.value)">
+                    <input type="button" class="btn-operator" value="-" onclick="pintarOperador(this.value)">
+                    <input type="button" class="btn-operator" value="*" onclick="pintarOperador(this.value)">
+                    <input type="button" class="btn-operator" value="/" onclick="pintarOperador(this.value)">
+                </div>
+            </div>
+        </div>
+        <div>
+            <input type="button" class="btn-dia" value="¿Qué día es hoy?" onclick="pintarDia(this.value)" >
+        </div>
+    </div>
+
+   
+
+<script src="./scripts.js"></script>
+</body>
+
+</html>
